@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_generic_services = true;
+option java_package = "io.github.oyeprashar.server.proto";
+
+package proto;
+
+service GreetingService {
+  rpc getGreeting(UserData) returns (GreetingResponse){}
+}
+
+message UserData{
+  string name = 1;
+}
+
+message GreetingResponse{
+  string greeting = 1;
+}
