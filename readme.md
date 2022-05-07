@@ -2,9 +2,9 @@
 
 ```
 query test1{
-getGreeting(input : {name: "Shubham"}){
-greeting
-}
-weather
+    getGreeting(input : {name: "Shubham"}){
+        greeting
+    }
+    weather
 }
 ```
